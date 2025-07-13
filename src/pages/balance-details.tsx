@@ -59,8 +59,8 @@ export default function BalanceDetailsPage() {
               {demoBalance.withdrawable}
             </span>
           </div>
-        </div>
-            </div>
+                </div>
+      </div>
 
       {/* Scrollable content area */}
       <div className="flex-1 overflow-hidden">
