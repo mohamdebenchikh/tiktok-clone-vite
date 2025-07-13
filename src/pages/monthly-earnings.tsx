@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import {
   ChevronLeftIcon,
   ChevronDownIcon,
-  TrendingUpIcon,
-  TrendingDownIcon,
+  ArrowTrendingUpIcon,
+  ArrowTrendingDownIcon,
 } from "@heroicons/react/24/outline";
-import { demoBalance, demoMonetizationPrograms } from "@/data/demo-data";
+import { demoBalance } from "@/data/demo-data";
 
 export default function MonthlyEarningsPage() {
   const navigate = useNavigate();
