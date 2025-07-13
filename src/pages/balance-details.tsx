@@ -108,7 +108,10 @@ export default function BalanceDetailsPage() {
               Check out the Monetization Center for exciting opportunities and
               programs.
             </p>
-            <button className="text-xs font-semibold text-pink-600 flex items-center gap-1">
+            <button
+              onClick={handleExploreMonetization}
+              className="text-xs font-semibold text-pink-600 flex items-center gap-1 hover:text-pink-700 transition-colors"
+            >
               Explore
               <ChevronRight className="size-4" />
             </button>
