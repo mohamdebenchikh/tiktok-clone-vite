@@ -50,7 +50,7 @@ export default function MonthlyEarningsPage() {
     },
   };
 
-  const currentData = monthlyData[selectedMonth];
+  const currentData = monthlyData[selectedMonth as keyof typeof monthlyData];
 
   return (
     <div className="h-full bg-white flex flex-col">
