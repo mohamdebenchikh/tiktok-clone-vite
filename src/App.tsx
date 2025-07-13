@@ -15,6 +15,8 @@ import IncomeVerificationPage from "@/pages/income-verification";
 import RewardsAnalyticsPage from "@/pages/rewards-analytics";
 import WithdrawMoneyPage from "@/pages/withdraw-money";
 import WithdrawResultPage from "@/pages/withdraw-result";
+import ContentRewardsPage from "@/pages/content-rewards";
+import MonthlyEarningsPage from "@/pages/monthly-earnings";
 
 function App() {
   return (
