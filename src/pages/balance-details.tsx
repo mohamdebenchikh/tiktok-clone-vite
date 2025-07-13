@@ -44,7 +44,9 @@ export default function BalanceDetailsPage() {
           </div>
           <div className="flex items-end text-white">
             <span className="font-semibold">USD</span>
-            <span className="text-4xl font-bold">123.76</span>
+            <span className="text-4xl font-bold">
+              {demoBalance.withdrawable}
+            </span>
           </div>
         </div>
       </div>
