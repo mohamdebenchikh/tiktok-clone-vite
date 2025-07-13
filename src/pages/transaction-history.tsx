@@ -211,7 +211,7 @@ export default function TransactionHistory() {
                     {transactions.map((transaction, index) => (
                       <div
                         key={transaction.id}
-                        onClick={() => handleTransactionClick(transaction.id)}
+                        onClick={handleTransactionClick}
                         className={`py-2 px-3 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors ${index > 0 ? "border-t" : ""}`}
                       >
                         <div className="leading-5">
