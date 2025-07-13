@@ -3,7 +3,7 @@ import {
   ChevronLeftIcon,
   InformationCircleIcon,
 } from "@heroicons/react/24/outline";
-import { demoVideos, demoStudioData } from "@/data/demo-data";
+import { demoVideos } from "@/data/demo-data";
 import YellowDiamond from "@/assets/yellow_diamond.png";
 
 export default function ContentRewardsPage() {
