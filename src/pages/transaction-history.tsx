@@ -135,6 +135,7 @@ export default function TransactionHistory() {
     <div className="h-full bg-gray-100 sm:rounded-lg sm:shadow relative overflow-hidden flex flex-col">
       <div className="relative flex items-center justify-between p-2">
         <Button
+          onClick={handleBack}
           variant={"ghost"}
           className="hover:bg-gray-200 rounded-full"
           size={"icon"}
