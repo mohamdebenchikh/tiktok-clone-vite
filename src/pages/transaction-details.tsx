@@ -78,7 +78,10 @@ export default function TransactionDetailsPage() {
                   <small className="text-xs max-w-[120px] overflow-hidden text-ellipsis">
                     b2c_trans_300073860871970347976360
                   </small>
-                  <button className="text-muted-foreground p-2 rounded-full hover:text-primary hover:bg-accent">
+                  <button
+                    onClick={handleCopyTransactionId}
+                    className="text-muted-foreground p-2 rounded-full hover:text-primary hover:bg-accent transition-colors"
+                  >
                     <CopyIcon className="size-4" />
                   </button>
                 </span>
