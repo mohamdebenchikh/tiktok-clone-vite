@@ -1,12 +1,25 @@
-import { HomeIcon, Users2Icon } from "lucide-react"
-import { UserIcon } from '@heroicons/react/24/solid';
-import { ChatBubbleBottomCenterTextIcon } from '@heroicons/react/24/outline';
-import TiktokCreateIcon from '@/assets/icons/tiktok-create.svg';
+import { useNavigate, useLocation } from "react-router-dom";
+import { HomeIcon, Users2Icon } from "lucide-react";
+import { UserIcon } from "@heroicons/react/24/solid";
+import { ChatBubbleBottomCenterTextIcon } from "@heroicons/react/24/outline";
+import TiktokCreateIcon from "@/assets/icons/tiktok-create.svg";
 
 export default function BottomNavigation() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <div className="h-14 border-t flex items-center justify-between px-4 w-full bg-primary-foreground sticky bottom-0 z-10">
-      <button className="flex flex-col  hover:text-primary text-muted-foreground items-center">
+      <button
+        onClick={() => navigate("/")}
+        className={`flex flex-col items-center transition-colors ${
+          isActive("/")
+            ? "text-primary"
+            : "hover:text-primary text-muted-foreground"
+        }`}
+      >
         <HomeIcon className="size-4" />
         <span className="text-[10px]">Home</span>
       </button>
@@ -17,20 +30,27 @@ export default function BottomNavigation() {
           10
         </div>
       </button>
-      <button>
-        <img src={TiktokCreateIcon} alt="" />
+      <button onClick={() => navigate("/tiktok-studio")}>
+        <img src={TiktokCreateIcon} alt="TikTok Studio" />
       </button>
       <button className="flex flex-col relative hover:text-primary text-muted-foreground items-center">
-        <ChatBubbleBottomCenterTextIcon />
+        <ChatBubbleBottomCenterTextIcon className="size-4" />
         <span className="text-[10px]">Inbox</span>
         <div className="absolute -top-1 -right-1 w-fit px-0.5 h-3 bg-red-500 rounded-full flex items-center justify-center text-white text-[10px]">
           99+
         </div>
       </button>
-      <button className="flex flex-col text-primary items-center">
+      <button
+        onClick={() => navigate("/profile")}
+        className={`flex flex-col items-center transition-colors ${
+          isActive("/profile")
+            ? "text-primary"
+            : "hover:text-primary text-muted-foreground"
+        }`}
+      >
         <UserIcon className="size-4" />
         <span className="text-[10px]">Profile</span>
       </button>
     </div>
-  )
+  );
 }
