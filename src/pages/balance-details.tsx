@@ -20,6 +20,14 @@ export default function BalanceDetailsPage() {
     navigate("/tiktok-studio");
   };
 
+  const handleContentRewards = () => {
+    navigate("/content-rewards");
+  };
+
+  const handleMonthlyEarnings = () => {
+    navigate("/monthly-earnings");
+  };
+
   return (
     <div className="h-full bg-gray-100 sm:rounded-lg sm:shadow relative overflow-hidden flex flex-col">
       <div className="h-[50vh]  bg-black/95 relative">
