@@ -14,7 +14,7 @@ export default function TransactionHistory() {
     navigate("/balance");
   };
 
-  const handleTransactionClick = (transactionId: number) => {
+  const handleTransactionClick = () => {
     navigate("/transaction-details");
   };
 
