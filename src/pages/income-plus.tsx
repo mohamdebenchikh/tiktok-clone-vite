@@ -28,7 +28,7 @@ export default function IncomePlusPage() {
           <ChevronLeftIcon className="w-6 h-6 text-gray-900" />
         </button>
         <h1 className="text-lg font-semibold text-gray-900">Income+</h1>
-        <div className="w-10" /> {/* Spacer */}
+        <div className="w-10"></div>
       </div>
 
       {/* Balance Section */}
