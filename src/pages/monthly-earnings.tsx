@@ -115,9 +115,9 @@ export default function MonthlyEarningsPage() {
                       }`}
                     >
                       {item.trend === "up" ? (
-                        <TrendingUpIcon className="w-4 h-4" />
+                        <ArrowTrendingUpIcon className="w-4 h-4" />
                       ) : (
-                        <TrendingDownIcon className="w-4 h-4" />
+                        <ArrowTrendingDownIcon className="w-4 h-4" />
                       )}
                       <span>{item.change}</span>
                     </div>
