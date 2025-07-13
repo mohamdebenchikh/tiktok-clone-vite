@@ -32,7 +32,7 @@ export default function BalanceDetailsPage() {
   return (
     <div className="h-full bg-gray-100 sm:rounded-lg sm:shadow relative overflow-hidden flex flex-col">
       {/* Header with black background - fixed height */}
-      <div className="h-[280px] bg-black/95 relative flex-shrink-0">
+      <div className="h-[280px] bg-black/95 relative flex-shrink-0 z-0">
         <div className="h-14 relative flex items-center justify-between p-2">
           <button
             onClick={handleBack}
