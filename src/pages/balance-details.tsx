@@ -78,7 +78,7 @@ export default function BalanceDetailsPage() {
             </div>
           </div>
 
-                    <button
+          <button
             onClick={handleIncomeplus}
             className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
           >
@@ -90,14 +90,14 @@ export default function BalanceDetailsPage() {
             </div>
             <div className="flex items-center gap-1">
               <div className="flex flex-col">
-                <span className="text-sm">USD 234.00</span>
+                <span className="text-sm">USD {demoBalance.withdrawable}</span>
                 <span className="text-xs text-muted-foreground">
-                  USD 234.00
+                  USD {demoBalance.withdrawable}
                 </span>
               </div>
               <ChevronRight className="size-5" />
             </div>
-          </div>
+          </button>
         </div>
         <div className="bg-white shadow-sm rounded-lg p-3 flex items-center justify-between">
           <div className="flex-1 space-y-2">
