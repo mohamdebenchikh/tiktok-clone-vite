@@ -29,7 +29,7 @@ export default function RewardsAnalyticsList() {
                 }`}
                 style={{
                   unicodeBidi: 'plaintext',
-                  direction: 'auto'
+                  direction: isRTLText(item.title) ? 'rtl' : 'ltr'
                 }}
                 data-direction={isRTLText(item.title) ? "rtl" : "ltr"}
               >
