@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { ChevronRight } from "lucide-react";
 import TransactionsIcon from "@/assets/transactions.png";
 import ShieldUserIcon from "@/assets/shield-user-icon.png";

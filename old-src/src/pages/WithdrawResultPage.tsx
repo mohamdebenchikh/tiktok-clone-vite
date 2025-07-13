@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import "../css/styles/withdraw-result.css";
 
 const WithdrawResultPage: React.FC = () => {

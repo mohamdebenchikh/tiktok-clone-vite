@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { ChevronRight } from "lucide-react";
 import LiveRewardIcon from "@/assets/live_reward.png";
 import CompaingsIcons from "@/assets/campaigns.png";

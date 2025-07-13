@@ -1,11 +1,13 @@
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router";
 import { HomeIcon, Users2Icon } from "lucide-react";
 import { UserIcon } from "@heroicons/react/24/solid";
 import { ChatBubbleBottomCenterTextIcon } from "@heroicons/react/24/outline";
 import TiktokCreateIcon from "@/assets/icons/tiktok-create.svg";
+import { useNavigateWithLoading } from "@/hooks/use-navigate-with-loading";
 
 export default function BottomNavigation() {
   const navigate = useNavigate();
+  const navigateWithLoading = useNavigateWithLoading();
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -30,7 +32,7 @@ export default function BottomNavigation() {
           10
         </div>
       </button>
-      <button onClick={() => navigate("/tiktok-studio")}>
+      <button onClick={() => navigateWithLoading("/tiktok-studio", { message: "Loading TikTok Studio..." })}>
         <img src={TiktokCreateIcon} alt="TikTok Studio" />
       </button>
       <button className="flex flex-col relative hover:text-primary text-muted-foreground items-center">

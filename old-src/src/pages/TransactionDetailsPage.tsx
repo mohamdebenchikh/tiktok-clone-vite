@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { useTransactions } from "../store/hooks";
 import { useNavigateWithLoading } from "../hooks/useNavigateWithLoading";
 import "../css/styles/transaction-details.css";

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { useNavigateWithLoading } from "../hooks/useNavigateWithLoading";
 import { useBalance, useProfileEmail, useWithdrawInfoLines, usePrimaryBadge } from "../store/hooks";

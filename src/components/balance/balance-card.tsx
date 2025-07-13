@@ -1,14 +1,16 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { ChevronRight } from "lucide-react";
 import BalanceBanner from "@/assets/balance_banner.png";
 import CoinIcon from "@/assets/coin.png";
 import { demoBalance } from "@/data/demo-data";
+import { useNavigateWithLoading } from "@/hooks/use-navigate-with-loading";
 
 export default function BalanceCard() {
   const navigate = useNavigate();
+  const navigateWithLoading = useNavigateWithLoading();
 
   const handleViewBalance = () => {
-    navigate("/balance-details");
+    navigateWithLoading("/balance-details", { message: "Loading Balance Details..." });
   };
 
   return (

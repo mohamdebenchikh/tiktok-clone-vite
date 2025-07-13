@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { ChevronLeft, ChevronRight, InfoIcon } from "lucide-react";
 import YellowDiamond from "@/assets/yellow_diamond.png";
 import YellowDollar from "@/assets/yellow_dollar.png";

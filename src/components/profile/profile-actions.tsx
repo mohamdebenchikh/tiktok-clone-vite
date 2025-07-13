@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { UserCog2Icon, Wallet2Icon } from "lucide-react";
 
 export default function ProfileActions() {

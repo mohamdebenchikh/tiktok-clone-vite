@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { startNavigation, finishNavigation } from "../store/slices/appSlice";
 import type { AppDispatch } from "../store/index";
