@@ -62,6 +62,10 @@ function App() {
               element={<RewardsAnalyticsPage />}
             />
 
+            {/* Earnings pages */}
+            <Route path="/content-rewards" element={<ContentRewardsPage />} />
+            <Route path="/monthly-earnings" element={<MonthlyEarningsPage />} />
+
             {/* Catch all - redirect to profile */}
             <Route path="*" element={<Navigate to="/profile" replace />} />
           </Routes>
