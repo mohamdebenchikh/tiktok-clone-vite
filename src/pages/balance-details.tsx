@@ -62,7 +62,7 @@ export default function BalanceDetailsPage() {
 
       <div className="p-2 relative -mt-32 space-y-3 z-10">
         <div className="bg-white shadow-sm rounded-lg flex flex-col p-1 space-y-1">
-                    <button
+                              <button
             onClick={handleContentRewards}
             className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
           >
