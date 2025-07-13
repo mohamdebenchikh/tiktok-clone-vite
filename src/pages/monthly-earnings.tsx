@@ -88,7 +88,7 @@ export default function MonthlyEarningsPage() {
               ${currentData.total.toFixed(2)}
             </div>
             <div className="flex items-center justify-center gap-1 text-sm text-green-600">
-              <TrendingUpIcon className="w-4 h-4" />
+              <ArrowTrendingUpIcon className="w-4 h-4" />
               <span>+18.5% from last month</span>
             </div>
           </div>
