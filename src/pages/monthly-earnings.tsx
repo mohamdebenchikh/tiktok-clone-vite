@@ -100,7 +100,7 @@ export default function MonthlyEarningsPage() {
             Earnings by Program
           </h3>
 
-          {currentData.breakdown.map((item, index) => (
+          {currentData.breakdown.map((item: any, index: number) => (
             <div key={index} className="bg-gray-50 rounded-lg p-4">
               <div className="flex items-center justify-between">
                 <div>
