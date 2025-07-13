@@ -117,4 +117,14 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* TikTok specific color variables */
+  :root {
+    --tiktok-red: #fe2c55;
+    --tiktok-blue: #25f4ee;
+    --tiktok-black: #000000;
+    --tiktok-dark-bg: #161823;
+    --tiktok-light-bg: #ffffff;
+    --tiktok-gray: #f1f1f2;
+  }
 }
