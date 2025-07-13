@@ -57,7 +57,7 @@ export default function ContentRewardsPage() {
             Recent Earnings
           </h3>
 
-          {demoVideos.map((video, index) => (
+          {demoVideos.map((video) => (
             <div key={video.id} className="bg-gray-50 rounded-lg p-4">
               <div className="flex items-center gap-3">
                 <div className="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
