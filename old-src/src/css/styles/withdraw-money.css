@@ -1,0 +1,401 @@
+/* Withdraw Money Page Styles - Scoped to prevent conflicts */
+.withdraw-money-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+  /* Reset any inherited styles */
+  /* Force reset all typography to prevent dashboard interference */
+  /* Header - Namespaced */
+  /* Content - Namespaced */
+}
+.withdraw-money-page * {
+  box-sizing: border-box;
+}
+.withdraw-money-page *,
+.withdraw-money-page h1,
+.withdraw-money-page h2,
+.withdraw-money-page h3,
+.withdraw-money-page h4,
+.withdraw-money-page h5,
+.withdraw-money-page h6,
+.withdraw-money-page button,
+.withdraw-money-page span,
+.withdraw-money-page div,
+.withdraw-money-page p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+}
+.withdraw-money-page .withdraw-header {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  position: relative;
+  border-bottom: 1px solid #e9ecef;
+}
+.withdraw-money-page .withdraw-header .back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-header .back-button:hover {
+  background-color: #f5f5f5;
+}
+.withdraw-money-page .withdraw-header .back-button svg {
+  display: block;
+}
+.withdraw-money-page .withdraw-header .withdraw-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif !important;
+  padding: 0 !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+.withdraw-money-page .withdraw-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* Withdrawal Account Section */
+  /* Amount Section */
+  /* Withdraw Button */
+  /* Footer */
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 10px 12px 8px !important;
+  border: 0;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .section-header .section-title {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif !important;
+  padding: 0 !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .section-header .wm-add-button {
+  background: none !important;
+  border: none !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+  padding: 4px 8px !important;
+  border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif !important;
+  margin: 0 !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .section-header .wm-add-button:hover {
+  background-color: rgba(0, 123, 255, 0.1) !important;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card {
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 18px;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info .paypal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 20px;
+  background-color: white;
+  border-radius: 4px;
+  flex-shrink: 0;
+  border: 1px solid #d6d7d8;
+  margin-top: 2px;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info .paypal-icon .paypal-logo {
+  width: 12px;
+  height: auto;
+  object-fit: contain;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info .account-details {
+  flex: 1;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info .account-details .account-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 8px;
+  font-family: inherit;
+  /* Make email part smaller */
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info .account-details .account-name .email-part {
+  font-size: 15px;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info .account-details .account-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info .account-details .account-info-text .info-line {
+  font-size: 13px;
+  color: #b9bbbd !important;
+  margin-bottom: 2px;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info .account-details .account-info-text .info-line:last-child {
+  margin-bottom: 0;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-meta {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-meta .primary-badge {
+  background-color: #e8f4f0;
+  color: #668b84 !important;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600 !important;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-meta .currency {
+  font-size: 14px;
+  color: #b9bbbd !important;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-meta .chevron-icon {
+  color: #87929b !important;
+  flex-shrink: 0;
+}
+.withdraw-money-page .withdraw-content .amount-section .section-title {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+  margin: 0 0 28px 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif !important;
+  padding: 0 !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+.withdraw-money-page .withdraw-content .amount-section .amount-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.withdraw-money-page .withdraw-content .amount-section .amount-input-container .currency-symbol {
+  font-size: 46px;
+  font-weight: 600 !important;
+  color: #6c757d;
+  margin-right: 8px;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-content .amount-section .amount-input-container .amount-input {
+  font-size: 48px;
+  font-weight: 300;
+  color: #6c757d;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-content .amount-section .amount-input-container .amount-input::placeholder {
+  color: #6c757d;
+}
+.withdraw-money-page .withdraw-content .amount-section .amount-input-container .amount-input:focus {
+  color: #000;
+}
+.withdraw-money-page .withdraw-content .amount-section .balance-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e9ecef;
+}
+.withdraw-money-page .withdraw-content .amount-section .balance-info .balance-text {
+  font-size: 14px;
+  color: #6c757d;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-content .amount-section .balance-info .withdraw-all-button {
+  background: none;
+  border: none;
+  color: #0060c6 !important;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-content .amount-section .balance-info .withdraw-all-button:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+.withdraw-money-page .withdraw-content .withdraw-now-button {
+  min-height: inherit !important;
+  background-color: #f0f0f0;
+  color: #a2a2a2 !important;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500 !important;
+  cursor: not-allowed;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  outline: none !important;
+  /* Mobile webview optimizations */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+.withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled) {
+  background-color: #007bff !important;
+  color: #ffffff !important;
+  cursor: pointer;
+  /* Mobile touch states */
+}
+.withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled):hover {
+  background-color: #0056b3 !important;
+}
+.withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled):active {
+  background-color: #004085 !important;
+}
+.withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled):focus {
+  background-color: #007bff !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled):focus:active {
+  background-color: #004085 !important;
+}
+.withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled):active, .withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled):focus:active {
+  background-color: #004085 !important;
+  transform: scale(0.98);
+}
+.withdraw-money-page .withdraw-content .withdraw-now-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.withdraw-money-page .withdraw-content .withdraw-footer {
+  text-align: center;
+  margin-top: auto;
+}
+.withdraw-money-page .withdraw-content .withdraw-footer .legal-button {
+  background: none;
+  border: none;
+  color: #949494 !important;
+  font-size: 14px;
+  font-weight: 500 !important;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: inherit;
+}
+.withdraw-money-page .withdraw-content .withdraw-footer .legal-button:hover {
+  background-color: #f8f9fa;
+}
+
+/* Mobile Responsiveness - Scoped */
+@media (max-width: 480px) {
+  .withdraw-money-page .withdraw-header {
+    padding: 12px 16px;
+  }
+  .withdraw-money-page .withdraw-header .withdraw-title {
+    font-size: 18px;
+  }
+  .withdraw-money-page .withdraw-content {
+    padding: 16px;
+    gap: 20px;
+  }
+  .withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-info {
+    width: 100%;
+  }
+  .withdraw-money-page .withdraw-content .withdrawal-account-section .account-card .account-meta {
+    top: 0px;
+    right: 0px;
+    align-items: flex-end;
+    gap: 4px;
+  }
+  .withdraw-money-page .withdraw-content .amount-section .amount-input-container .currency-symbol {
+    font-size: 26px;
+  }
+  .withdraw-money-page .withdraw-content .amount-section .amount-input-container .amount-input {
+    font-size: 36px;
+  }
+  .withdraw-money-page .withdraw-content .withdraw-now-button {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+/* Touch device improvements - Scoped */
+@media (hover: none) and (pointer: coarse) {
+  .withdraw-money-page .withdraw-header .back-button:hover {
+    background-color: transparent;
+  }
+  .withdraw-money-page .withdraw-content .withdrawal-account-section .section-header .wm-add-button {
+    min-height: 44px;
+    padding: 0px 12px 8px !important;
+  }
+  .withdraw-money-page .withdraw-content .withdrawal-account-section .section-header .wm-add-button:hover {
+    background-color: transparent;
+  }
+  .withdraw-money-page .withdraw-content .amount-section .balance-info .withdraw-all-button {
+    min-height: 44px;
+    padding: 8px 12px;
+  }
+  .withdraw-money-page .withdraw-content .amount-section .balance-info .withdraw-all-button:hover {
+    background-color: transparent;
+  }
+  .withdraw-money-page .withdraw-content .withdraw-now-button {
+    min-height: 50px;
+  }
+  .withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled):hover {
+    background-color: #007bff;
+  }
+  .withdraw-money-page .withdraw-content .withdraw-now-button:not(.disabled):active {
+    background-color: #007bff;
+  }
+  .withdraw-money-page .withdraw-content .withdraw-footer .legal-button {
+    min-height: 44px;
+  }
+  .withdraw-money-page .withdraw-content .withdraw-footer .legal-button:hover {
+    background-color: transparent;
+  }
+}

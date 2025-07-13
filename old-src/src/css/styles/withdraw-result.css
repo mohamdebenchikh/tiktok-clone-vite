@@ -1,0 +1,183 @@
+/* Withdraw Result Page Styles - Scoped to prevent conflicts */
+.withdraw-result-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+  /* Reset any inherited styles */
+  /* Force reset all typography to prevent dashboard interference */
+}
+.withdraw-result-page * {
+  box-sizing: border-box;
+}
+.withdraw-result-page *,
+.withdraw-result-page h1,
+.withdraw-result-page h2,
+.withdraw-result-page h3,
+.withdraw-result-page h4,
+.withdraw-result-page h5,
+.withdraw-result-page h6,
+.withdraw-result-page button,
+.withdraw-result-page span,
+.withdraw-result-page div,
+.withdraw-result-page p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+}
+.withdraw-result-page .success-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 60px;
+  text-align: center;
+}
+.withdraw-result-page .success-section .success-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.withdraw-result-page .success-section .success-icon svg {
+  width: 48px;
+  height: 48px;
+}
+.withdraw-result-page .success-section .success-title {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+  margin-bottom: 12px !important;
+  line-height: 1.3;
+}
+.withdraw-result-page .success-section .success-subtitle {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #6b7280 !important;
+  line-height: 1.4;
+}
+.withdraw-result-page .details-section {
+  padding: 0 20px 30px;
+}
+.withdraw-result-page .details-section .detail-item {
+  padding: 14px 0px;
+  border-top: 1px solid #e9ecef;
+}
+.withdraw-result-page .details-section .detail-item .detail-label {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+  margin-bottom: 8px !important;
+  line-height: 1.3;
+}
+.withdraw-result-page .details-section .detail-item .detail-value {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+  line-height: 1.4;
+}
+.withdraw-result-page .details-section .detail-item .detail-value.order-id {
+  font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace !important;
+  font-size: 16px !important;
+  color: #374151 !important;
+  word-break: break-all;
+}
+.withdraw-result-page .details-section .detail-item .detail-email {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.4;
+}
+.withdraw-result-page .button-section {
+  padding: 20px 20px 40px;
+  border-top: 1px solid #e9ecef;
+}
+.withdraw-result-page .button-section .back-button {
+  width: 100%;
+  background-color: #fe2b54 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 12px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.withdraw-result-page .button-section .back-button:hover {
+  background-color: #fe2b54 !important;
+  transform: translateY(-1px);
+}
+.withdraw-result-page .button-section .back-button:active {
+  background-color: #fe2b54 !important;
+  transform: translateY(0);
+}
+.withdraw-result-page .button-section .back-button:focus {
+  background-color: #fe2b54 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .withdraw-result-page .success-section {
+    padding: 60px 16px 40px;
+  }
+  .withdraw-result-page .success-section .success-icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 24px;
+  }
+  .withdraw-result-page .success-section .success-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  .withdraw-result-page .success-section .success-title {
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+  }
+  .withdraw-result-page .success-section .success-subtitle {
+    font-size: 14px !important;
+  }
+  .withdraw-result-page .details-section {
+    padding: 0 16px 4px;
+  }
+  .withdraw-result-page .details-section .detail-item .detail-label {
+    font-size: 15px !important;
+    margin-bottom: 6px !important;
+  }
+  .withdraw-result-page .details-section .detail-item .detail-value {
+    font-size: 16px !important;
+  }
+  .withdraw-result-page .details-section .detail-item .detail-value.order-id {
+    font-size: 15px !important;
+  }
+  .withdraw-result-page .details-section .detail-item .detail-email {
+    font-size: 15px !important;
+    margin-top: 6px !important;
+  }
+  .withdraw-result-page .button-section {
+    padding: 16px 16px 32px;
+  }
+  .withdraw-result-page .button-section .back-button {
+    padding: 12px !important;
+    font-size: 15px !important;
+  }
+}
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+  .withdraw-result-page .back-button:hover {
+    background-color: #ef4444 !important;
+    transform: none;
+  }
+  .withdraw-result-page .back-button:active {
+    background-color: #dc2626 !important;
+  }
+}

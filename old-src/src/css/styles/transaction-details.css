@@ -1,0 +1,364 @@
+.transaction-details-page {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  font-family: ProximanovaRegular;
+}
+.transaction-details-page .transaction-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.transaction-details-page .transaction-details-header .back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transaction-details-page .transaction-details-header .back-button:focus {
+  outline: none;
+  background: none;
+}
+.transaction-details-page .transaction-details-header .back-button:active {
+  transform: scale(0.98);
+}
+.transaction-details-page .transaction-details-header .back-button:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+@media (hover: hover) {
+  .transaction-details-page .transaction-details-header .back-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.transaction-details-page .transaction-details-header .back-button:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.transaction-details-page .transaction-details-header .back-button svg {
+  color: #000;
+}
+.transaction-details-page .transaction-details-header .details-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+.transaction-details-page .transaction-details-header .header-spacer {
+  width: 24px;
+}
+.transaction-details-page .transaction-info-card {
+  background: #fff;
+  margin: 20px;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.transaction-details-page .transaction-info-card .transaction-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+}
+.transaction-details-page .transaction-info-card .transaction-amount-large {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+}
+.transaction-details-page .transaction-info-card .transaction-amount-large .currency {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.transaction-details-page .transaction-info-card .transaction-amount-large .amount {
+  font-size: 48px;
+  font-weight: 700;
+}
+.transaction-details-page .transaction-details-list {
+  background: #fff;
+  margin: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.transaction-details-page .transaction-details-list .detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.transaction-details-page .transaction-details-list .detail-item:last-child {
+  border-bottom: none;
+}
+.transaction-details-page .transaction-details-list .detail-item.transaction-id-item {
+  align-items: flex-start;
+  gap: 48px;
+}
+@media (min-width: 480px) {
+  .transaction-details-page .transaction-details-list .detail-item.transaction-id-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+}
+.transaction-details-page .transaction-details-list .detail-item .detail-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  flex-shrink: 0;
+}
+.transaction-details-page .transaction-details-list .detail-item .detail-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-align: right;
+}
+.transaction-details-page .transaction-details-list .detail-item .detail-value.status-completed {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.transaction-details-page .transaction-details-list .detail-item .detail-value.status-completed .status-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: #00d084;
+  border-radius: 50%;
+}
+.transaction-details-page .transaction-details-list .detail-item .detail-value.transaction-id-text {
+  font-size: 14px;
+  word-break: break-all;
+  text-align: right;
+  line-height: 1.4;
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+.transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  direction: ltr;
+}
+@media (min-width: 480px) {
+  .transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper {
+    align-items: center;
+    width: auto;
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+.transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .transaction-id-text {
+  flex: 1;
+  min-width: 0;
+}
+.transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .copy-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .copy-button:focus {
+  outline: none;
+  background: none;
+}
+.transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .copy-button:active {
+  transform: scale(0.98);
+}
+.transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .copy-button:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+@media (hover: hover) {
+  .transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .copy-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .copy-button:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .copy-button svg {
+  color: #888;
+}
+@media (min-width: 480px) {
+  .transaction-details-page .transaction-details-list .detail-item .transaction-id-wrapper .copy-button {
+    margin-top: 0;
+  }
+}
+.transaction-details-page .need-help-section {
+  margin: 40px 20px 20px;
+}
+.transaction-details-page .need-help-section .need-help-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+}
+.transaction-details-page .need-help-section .need-help-button:focus {
+  outline: none;
+  background: none;
+}
+.transaction-details-page .need-help-section .need-help-button:active {
+  transform: scale(0.98);
+}
+.transaction-details-page .need-help-section .need-help-button:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+@media (hover: hover) {
+  .transaction-details-page .need-help-section .need-help-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.transaction-details-page .need-help-section .need-help-button:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.transaction-details-page .need-help-section .need-help-button svg {
+  color: #888;
+}
+@media (max-width: 768px) {
+  .transaction-details-page .transaction-details-header {
+    padding: 1rem;
+  }
+  .transaction-details-page .transaction-details-header .details-title {
+    font-size: 16px;
+  }
+  .transaction-details-page .transaction-info-card {
+    margin: 16px;
+    padding: 32px 16px;
+  }
+  .transaction-details-page .transaction-info-card .transaction-name {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .transaction-details-page .transaction-info-card .transaction-amount-large {
+    font-size: 40px;
+  }
+  .transaction-details-page .transaction-info-card .transaction-amount-large .currency {
+    font-size: 20px;
+  }
+  .transaction-details-page .transaction-info-card .transaction-amount-large .amount {
+    font-size: 40px;
+  }
+  .transaction-details-page .transaction-details-list {
+    margin: 16px;
+  }
+  .transaction-details-page .transaction-details-list .detail-item {
+    padding: 16px;
+  }
+  .transaction-details-page .transaction-details-list .detail-item .detail-label {
+    font-size: 15px;
+  }
+  .transaction-details-page .transaction-details-list .detail-item .detail-value {
+    font-size: 15px;
+  }
+  .transaction-details-page .transaction-details-list .detail-item .detail-value.transaction-id-text {
+    font-size: 13px;
+  }
+  .transaction-details-page .need-help-section {
+    margin: 32px 16px 16px;
+  }
+  .transaction-details-page .need-help-section .need-help-button {
+    font-size: 15px;
+    padding: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .transaction-details-page .transaction-details-header {
+    padding: 16px 12px 10px;
+  }
+  .transaction-details-page .transaction-details-header .details-title {
+    font-size: 15px;
+  }
+  .transaction-details-page .transaction-info-card {
+    margin: 12px;
+    padding: 24px 12px;
+  }
+  .transaction-details-page .transaction-info-card .transaction-name {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .transaction-details-page .transaction-info-card .transaction-amount-large .currency {
+    font-size: 18px;
+  }
+  .transaction-details-page .transaction-info-card .transaction-amount-large .amount {
+    font-size: 36px;
+  }
+  .transaction-details-page .transaction-details-list {
+    margin: 12px;
+  }
+  .transaction-details-page .transaction-details-list .detail-item {
+    padding: 14px;
+  }
+  .transaction-details-page .transaction-details-list .detail-item .detail-label {
+    font-size: 14px;
+  }
+  .transaction-details-page .transaction-details-list .detail-item .detail-value {
+    font-size: 14px;
+  }
+  .transaction-details-page .transaction-details-list .detail-item .detail-value.transaction-id-text {
+    font-size: 12px;
+  }
+  .transaction-details-page .need-help-section {
+    margin: 24px 12px 12px;
+  }
+  .transaction-details-page .need-help-section .need-help-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

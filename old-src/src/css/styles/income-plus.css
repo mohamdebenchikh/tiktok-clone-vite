@@ -1,0 +1,285 @@
+.income-plus-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+  /* Reset any inherited styles */
+  /* Header - Namespaced */
+  /* Balance Section - Namespaced */
+  /* Menu Section - Namespaced */
+  /* Footer Section - Namespaced */
+}
+.income-plus-page * {
+  box-sizing: border-box;
+}
+.income-plus-page .income-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  position: relative;
+  background-color: #ffffff;
+}
+.income-plus-page .income-header .back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  font-family: inherit;
+}
+.income-plus-page .income-header .back-button:hover {
+  background-color: #f5f5f5;
+}
+.income-plus-page .income-header .back-button svg {
+  display: block;
+}
+.income-plus-page .income-header .income-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  font-family: inherit;
+}
+.income-plus-page .balance-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 50px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.income-plus-page .balance-section .balance-amount {
+  font-size: 50px;
+  color: #000;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1;
+}
+.income-plus-page .balance-section .balance-label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  font-family: inherit;
+}
+.income-plus-page .balance-section .withdraw-button {
+  background-color: #e94357;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  margin: 0;
+}
+.income-plus-page .balance-section .withdraw-button:hover {
+  background-color: #e04855;
+  transform: translateY(-1px);
+}
+.income-plus-page .balance-section .withdraw-button:active {
+  background-color: #e94357;
+  transform: translateY(0);
+}
+.income-plus-page .balance-section .withdraw-button:focus {
+  background-color: #e94357;
+  outline: none;
+}
+.income-plus-page .menu-section {
+  flex: 1;
+  padding: 0 20px;
+  background-color: #ffffff;
+}
+.income-plus-page .menu-section .menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0;
+  background-color: transparent;
+}
+.income-plus-page .menu-section .menu-item:hover {
+  background-color: #f9f9f9;
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.income-plus-page .menu-section .menu-item .menu-text {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  font-family: inherit;
+  margin: 0;
+}
+.income-plus-page .menu-section .menu-item .menu-text-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.income-plus-page .menu-section .menu-item .menu-text-with-icon .menu-text {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  font-family: inherit;
+  margin: 0;
+}
+.income-plus-page .menu-section .menu-item .menu-text-with-icon .paypal-icon {
+  font-size: 18px;
+  color: #003087;
+  flex-shrink: 0;
+}
+.income-plus-page .menu-section .menu-item .chevron-icon {
+  color: #888;
+  transition: color 0.2s ease;
+  display: block;
+  flex-shrink: 0;
+}
+.income-plus-page .menu-section .menu-item:hover .chevron-icon {
+  color: #999;
+}
+.income-plus-page .menu-section .menu-item::after {
+  content: none;
+}
+.income-plus-page .footer-section {
+  padding: 40px 20px 10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.income-plus-page .footer-section .footer-text {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: inherit;
+  margin: 0;
+}
+.income-plus-page .footer-section .footer-text .footer-link {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  margin: 0;
+}
+.income-plus-page .footer-section .footer-text .footer-link:hover {
+  color: #333;
+}
+.income-plus-page .footer-section .footer-text .footer-link:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Mobile Responsiveness - Scoped */
+@media (max-width: 480px) {
+  .income-plus-page .income-header {
+    padding: 18px 16px;
+  }
+  .income-plus-page .income-header .income-title {
+    font-size: 18px;
+  }
+  .income-plus-page .balance-section {
+    padding: 40px 20px 35px;
+  }
+  .income-plus-page .balance-section .balance-amount {
+    font-size: 46px;
+  }
+  .income-plus-page .balance-section .balance-label {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .income-plus-page .balance-section .withdraw-button {
+    padding: 10px 36px;
+    font-size: 15px;
+  }
+  .income-plus-page .menu-section {
+    padding: 0 16px;
+  }
+  .income-plus-page .menu-section .menu-item {
+    padding: 14px 0;
+  }
+  .income-plus-page .menu-section .menu-item:hover {
+    margin: 0 -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .income-plus-page .menu-section .menu-item .menu-text {
+    font-size: 15px;
+  }
+  .income-plus-page .menu-section .menu-item .menu-text-with-icon {
+    gap: 10px;
+  }
+  .income-plus-page .menu-section .menu-item .menu-text-with-icon .menu-text {
+    font-size: 15px;
+  }
+  .income-plus-page .menu-section .menu-item .menu-text-with-icon .paypal-icon {
+    font-size: 16px;
+  }
+  .income-plus-page .footer-section {
+    padding: 30px 16px 10px;
+  }
+  .income-plus-page .footer-section .footer-text {
+    font-size: 13px;
+  }
+  .income-plus-page .footer-section .footer-text .footer-link {
+    font-size: 13px;
+  }
+}
+/* Touch device improvements - Scoped */
+@media (hover: none) and (pointer: coarse) {
+  .income-plus-page .income-header .back-button:hover {
+    background-color: transparent;
+  }
+  .income-plus-page .balance-section .withdraw-button {
+    padding: 8px 44px;
+  }
+  .income-plus-page .balance-section .withdraw-button:hover {
+    background-color: #e94357;
+    transform: none;
+  }
+  .income-plus-page .balance-section .withdraw-button:active {
+    background-color: #e94357;
+    transform: none;
+  }
+  .income-plus-page .balance-section .withdraw-button:focus {
+    background-color: #e94357;
+    outline: none;
+  }
+  .income-plus-page .menu-section .menu-item {
+    padding: 16px 0;
+  }
+  .income-plus-page .menu-section .menu-item:hover {
+    background-color: transparent;
+    margin: 0;
+    padding: 16px 0;
+  }
+  .income-plus-page .menu-section .menu-item .chevron-icon:hover {
+    color: #888;
+  }
+  .income-plus-page .footer-section .footer-text .footer-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 4px;
+  }
+  .income-plus-page .footer-section .footer-text .footer-link:hover {
+    color: #000;
+  }
+}

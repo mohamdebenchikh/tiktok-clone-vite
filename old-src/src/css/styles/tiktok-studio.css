@@ -1,0 +1,1670 @@
+.tiktok-studio-page {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  font-family: ProximanovaRegular;
+}
+.tiktok-studio-page .studio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.tiktok-studio-page .studio-header .back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tiktok-studio-page .studio-header .back-button:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .studio-header .back-button:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .studio-header .back-button:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .studio-header .back-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .studio-header .back-button:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .studio-header .back-button svg {
+  color: #000;
+}
+.tiktok-studio-page .studio-header .studio-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+.tiktok-studio-page .studio-header .header-actions .icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tiktok-studio-page .studio-header .header-actions .icon-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .studio-header .header-actions .icon-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .studio-header .header-actions .icon-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .studio-header .header-actions .icon-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .studio-header .header-actions .icon-btn:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .studio-header .header-actions .icon-btn svg {
+  color: #000;
+}
+.tiktok-studio-page .main-tab-switcher {
+  display: flex;
+  padding: 0 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e1e5e9;
+}
+.tiktok-studio-page .main-tab-switcher .main-tab {
+  background: none;
+  border: none;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #8a8a8a;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  flex: 1;
+}
+.tiktok-studio-page .main-tab-switcher .main-tab.active {
+  color: #000000;
+  border-bottom-color: #000000;
+}
+.tiktok-studio-page .main-tab-switcher .main-tab:hover:not(.active) {
+  color: #000000;
+}
+.tiktok-studio-page .analytics-section {
+  background-color: #fff;
+  margin: 20px 20px 30px;
+  border-radius: 10px;
+  padding: 24px 20px;
+}
+.tiktok-studio-page .analytics-section .analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.tiktok-studio-page .analytics-section .analytics-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+.tiktok-studio-page .analytics-section .analytics-header .view-all-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+}
+.tiktok-studio-page .analytics-section .analytics-header .view-all-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .analytics-section .analytics-header .view-all-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .analytics-section .analytics-header .view-all-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .analytics-section .analytics-header .view-all-btn svg {
+  color: #999;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .analytics-section .analytics-header .view-all-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .analytics-section .analytics-header .view-all-btn:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .analytics-section .analytics-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 24px;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card {
+  padding: 0 18px;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card:first-child {
+  padding-left: 0;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card:last-child {
+  padding-right: 0;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card:not(:last-child) {
+  border-right: 1px solid #f0f0f0;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-label {
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-value {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  line-height: 0.9;
+  margin-bottom: 12px;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change svg {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change.increase {
+  color: #1ea7fd;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change.increase svg {
+  background-color: #1ea7fd;
+  color: white;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change.decrease {
+  color: #999;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change.decrease svg {
+  background-color: #afafaf;
+  color: white;
+}
+.tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change .period {
+  color: #999;
+  margin-left: 4px;
+  font-weight: 400;
+}
+.tiktok-studio-page .analytics-section .latest-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.tiktok-studio-page .analytics-section .latest-post .latest-post-label {
+  font-size: 16px;
+  font-weight: 600;
+}
+.tiktok-studio-page .analytics-section .latest-post .latest-post-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tiktok-studio-page .analytics-section .latest-post .latest-post-stats .stat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+}
+.tiktok-studio-page .analytics-section .latest-post .latest-post-stats .stat-item svg {
+  color: #666;
+}
+.tiktok-studio-page .analytics-section .latest-post .latest-post-stats > svg {
+  color: #ccc;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .analytics-section {
+    margin: 16px 16px 16px;
+    padding: 16px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-header {
+    margin-bottom: 16px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-header h2 {
+    font-size: 16px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-header .view-all-btn {
+    font-size: 12px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-cards {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-cards .analytics-card {
+    padding: 0 8px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-cards .analytics-card:first-child {
+    padding-left: 0;
+  }
+  .tiktok-studio-page .analytics-section .analytics-cards .analytics-card:last-child {
+    padding-right: 0;
+  }
+  .tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-label {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-value {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change {
+    font-size: 12px;
+    gap: 4px;
+  }
+  .tiktok-studio-page .analytics-section .analytics-cards .analytics-card .card-change svg {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .tiktok-studio-page .analytics-section .latest-post {
+    margin-bottom: 0;
+  }
+  .tiktok-studio-page .analytics-section .latest-post .latest-post-label {
+    font-size: 14px;
+  }
+  .tiktok-studio-page .analytics-section .latest-post .latest-post-stats {
+    gap: 8px;
+  }
+  .tiktok-studio-page .analytics-section .latest-post .latest-post-stats .stat-item {
+    font-size: 14px;
+    gap: 4px;
+  }
+  .tiktok-studio-page .analytics-section .latest-post .latest-post-stats > svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+.tiktok-studio-page .notification-container {
+  margin: 16px 20px 20px;
+}
+.tiktok-studio-page .notification-container .notification-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-icon img {
+  width: 48px;
+  height: 48px;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-icon svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content {
+  flex: 1;
+  min-width: 0;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .notification-title {
+  flex: 1;
+  min-width: 0;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .notification-title h3 {
+  color: #161823;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .notification-title .notification-subtitle {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.4;
+  display: block;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #9ca3af;
+  padding: 4px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  margin-left: 12px;
+  transition: all 0.2s ease;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .close-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .close-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .close-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .close-btn:hover {
+  color: #374151;
+  background: rgba(0, 0, 0, 0.05);
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .close-btn:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .close-btn svg {
+  width: 14px;
+  height: 14px;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .download-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  background: transparent;
+  color: #fe2c55;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .download-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .download-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .download-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .download-btn:hover {
+  color: #ff0050;
+  background: rgba(254, 44, 85, 0.05);
+}
+.tiktok-studio-page .notification-container .notification-card .notification-content .download-btn:active {
+  color: #e02046;
+  background: rgba(254, 44, 85, 0.1);
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .notification-container {
+    margin: 12px 16px 16px;
+  }
+  .tiktok-studio-page .notification-container .notification-card {
+    padding: 14px;
+    gap: 10px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-content .notification-header {
+    margin-bottom: 10px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .notification-title h3 {
+    font-size: 16px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .notification-title .notification-subtitle {
+    font-size: 13px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .close-btn {
+    margin-left: 8px;
+    padding: 3px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-content .download-btn {
+    font-size: 14px;
+    gap: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .tiktok-studio-page .notification-container {
+    margin: 10px 12px 14px;
+  }
+  .tiktok-studio-page .notification-container .notification-card {
+    padding: 12px;
+    gap: 10px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .notification-title h3 {
+    font-size: 15px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-content .notification-header .notification-title .notification-subtitle {
+    font-size: 14px;
+  }
+  .tiktok-studio-page .notification-container .notification-card .notification-content .download-btn {
+    font-size: 13px;
+  }
+}
+.tiktok-studio-page .control-panel {
+  background-color: #fff;
+  margin: 20px 20px 30px;
+  border-radius: 10px;
+  padding: 24px 20px;
+}
+.tiktok-studio-page .control-panel .control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.tiktok-studio-page .control-panel .control-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+.tiktok-studio-page .control-panel .control-header .toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  background-color: #1ea7fd;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tiktok-studio-page .control-panel .control-header .toggle-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .control-panel .control-header .toggle-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .control-panel .control-header .toggle-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .control-panel .control-header .toggle-btn:hover {
+  background-color: #0ea5fc;
+}
+.tiktok-studio-page .control-panel .control-header .toggle-btn:active {
+  background-color: #0288d1;
+}
+.tiktok-studio-page .control-panel .control-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.tiktok-studio-page .control-panel .control-content .control-group h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 12px 0;
+}
+.tiktok-studio-page .control-panel .control-content .control-group .control-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tiktok-studio-page .control-panel .control-content .control-group .control-inputs label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+.tiktok-studio-page .control-panel .control-content .control-group .control-inputs label input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  transition: background-color 0.2s;
+}
+.tiktok-studio-page .control-panel .control-content .control-group .control-inputs label input:focus {
+  outline: none;
+  background-color: #eeeeee;
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .control-panel {
+    margin: 16px 16px 24px;
+    padding: 16px;
+  }
+  .tiktok-studio-page .control-panel .control-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .tiktok-studio-page .control-panel .control-header h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .tiktok-studio-page .control-panel .control-header .toggle-btn {
+    width: 100%;
+  }
+  .tiktok-studio-page .control-panel .control-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.tiktok-studio-page .combined-sections-container {
+  background: #fff;
+  border-radius: 12px;
+  margin: 20px 0px;
+  overflow: hidden;
+}
+.tiktok-studio-page .tools-section {
+  background-color: #fff;
+  margin: 20px 20px 30px;
+  border-radius: 10px;
+  padding: 24px 20px;
+  overflow: hidden;
+}
+.tiktok-studio-page .tools-section .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.tiktok-studio-page .tools-section .tools-grid .tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 4px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .tools-section .tools-grid .tool-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .tools-section .tools-grid .tool-item:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon svg {
+  color: #000;
+  width: 24px;
+  height: 24px;
+}
+.tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon img {
+  width: 24px;
+  height: 24px;
+  filter: none;
+}
+.tiktok-studio-page .tools-section .tools-grid .tool-item .tool-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.2;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .tools-section {
+    margin: 0px 16px 16px;
+    padding: 16px 12px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid {
+    gap: 6px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item {
+    padding: 12px 2px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-label {
+    font-size: 12px;
+    margin-top: 6px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 480px) {
+  .tiktok-studio-page .tools-section {
+    padding: 12px 8px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item {
+    padding: 8px 1px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon img {
+    width: 22px;
+    height: 22px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-label {
+    font-size: 11px;
+    margin-top: 4px;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 360px) {
+  .tiktok-studio-page .tools-section {
+    padding: 10px 6px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item {
+    padding: 6px 1px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon img {
+    width: 14px;
+    height: 14px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-label {
+    font-size: 10px;
+    margin-top: 3px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 320px) {
+  .tiktok-studio-page .tools-section {
+    padding: 8px 4px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item {
+    padding: 4px 0px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-icon img {
+    width: 12px;
+    height: 12px;
+  }
+  .tiktok-studio-page .tools-section .tools-grid .tool-item .tool-label {
+    font-size: 9px;
+    margin-top: 2px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+}
+.tiktok-studio-page .monetization-section {
+  background-color: transparent;
+  margin: 0;
+  border-radius: 0;
+  padding: 20px;
+  box-shadow: none;
+  border-bottom: 1px solid #e1e1e1;
+}
+.tiktok-studio-page .monetization-section .monetization-tabs {
+  display: flex;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+.tiktok-studio-page .monetization-section .monetization-tabs .tab-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  background-color: transparent;
+  font-family: ProximanovaRegular;
+  border-radius: 8px;
+  transition: all 0.2s;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .monetization-section .monetization-tabs .tab-btn.active {
+  color: #000;
+  background-color: #fff;
+}
+.tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:focus, .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:active, .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:hover, .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:visited {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:not(.active):active {
+  background-color: transparent !important;
+  transform: none !important;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:active, .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:focus, .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn:hover {
+    background-color: transparent !important;
+    transform: none !important;
+    outline: none !important;
+  }
+  .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn.active {
+    background-color: #fff !important;
+  }
+}
+.tiktok-studio-page .monetization-section .monetization-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  background-color: #f5f5f5;
+  border-radius: 10px 10px 0 0;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card {
+  padding: 0 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-label-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card:first-child {
+  border-right: 1px solid #e0e0e0;
+  padding-right: 20px;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card:last-child {
+  padding-left: 20px;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-value-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-value .currency-symbol {
+  font-size: 18px;
+  font-weight: 600;
+}
+.tiktok-studio-page .monetization-section .monetization-stats .stat-card svg {
+  color: #999;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-header .view-all-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-header .view-all-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-header .view-all-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-header .view-all-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-header .view-all-btn svg {
+  color: #999;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-header .view-all-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-header .view-all-btn:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  min-width: 0;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon {
+  width: 52px;
+  height: 52px;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon svg {
+  color: #000;
+  width: 24px;
+  height: 24px;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon img {
+  width: 24px;
+  height: 24px;
+  filter: none;
+}
+.tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  line-height: 1.3;
+  max-width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .monetization-section {
+    margin: 0px 16px 18px;
+    padding: 16px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-tabs {
+    margin-bottom: 16px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-tabs .tab-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats {
+    padding: 8px 0px;
+    margin-bottom: 0;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card {
+    padding: 8px 20px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card:first-child {
+    border-right: 1px solid #e0e0e0;
+    padding-right: 16px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-content {
+    align-items: flex-start;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-value-container {
+    gap: 8px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-value {
+    font-size: 20px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card .stat-value .currency-symbol {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .tiktok-studio-page .monetization-section .monetization-stats .stat-card svg {
+    width: 14px;
+    height: 14px;
+    color: #999;
+  }
+  .tiktok-studio-page .monetization-section .rewards-per-post-section {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .tiktok-studio-page .monetization-section .rewards-per-post-section:hover {
+    background-color: #f5f5f5;
+  }
+  .tiktok-studio-page .monetization-section .rewards-per-post-section .rewards-per-post-label {
+    font-size: 14px;
+  }
+  .tiktok-studio-page .monetization-section .rewards-per-post-section .rewards-per-post-icons {
+    gap: 6px;
+  }
+  .tiktok-studio-page .monetization-section .rewards-per-post-section .rewards-per-post-icons .reward-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .tiktok-studio-page .monetization-section .rewards-per-post-section .rewards-per-post-icons .reward-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .tiktok-studio-page .monetization-section .rewards-per-post-section .rewards-per-post-icons svg {
+    width: 14px;
+    height: 14px;
+    color: #999;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-header {
+    margin-bottom: 20px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-header h3 {
+    font-size: 18px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-header .view-all-btn {
+    font-size: 14px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid {
+    gap: 16px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item {
+    padding: 12px 6px;
+    min-width: 0;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-label {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 480px) {
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid {
+    gap: 8px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item {
+    padding: 10px 4px;
+    min-width: 0;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 8px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-icon img {
+    width: 22px;
+  }
+  .tiktok-studio-page .monetization-section .monetization-programs .programs-grid .program-item .program-label {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.tiktok-studio-page .inspiration-content {
+  padding: 20px 0;
+}
+.tiktok-studio-page .inspiration-content .inspiration-message {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+.tiktok-studio-page .inspiration-content .inspiration-message .message-icon {
+  margin-bottom: 20px;
+  color: #fe2c55;
+}
+.tiktok-studio-page .inspiration-content .inspiration-message .message-icon svg {
+  display: block;
+  margin: 0 auto;
+}
+.tiktok-studio-page .inspiration-content .inspiration-message h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+.tiktok-studio-page .inspiration-content .inspiration-message p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tiktok-studio-page .inspiration-content .inspiration-message .explore-btn {
+  background: #fe2c55;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.tiktok-studio-page .inspiration-content .inspiration-message .explore-btn:hover {
+  background: #e91e63;
+}
+.tiktok-studio-page .inspiration-content .inspiration-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.tiktok-studio-page .inspiration-content .inspiration-features .feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f8f9fa;
+  transition: background-color 0.2s ease;
+}
+.tiktok-studio-page .inspiration-content .inspiration-features .feature-item:hover {
+  background: #f1f3f4;
+}
+.tiktok-studio-page .inspiration-content .inspiration-features .feature-item .feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #fe2c55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+.tiktok-studio-page .inspiration-content .inspiration-features .feature-item .feature-content {
+  flex: 1;
+}
+.tiktok-studio-page .inspiration-content .inspiration-features .feature-item .feature-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+.tiktok-studio-page .inspiration-content .inspiration-features .feature-item .feature-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .inspiration-content .inspiration-message {
+    padding: 30px 15px;
+  }
+  .tiktok-studio-page .inspiration-content .inspiration-message h3 {
+    font-size: 20px;
+  }
+  .tiktok-studio-page .inspiration-content .inspiration-message p {
+    font-size: 13px;
+  }
+  .tiktok-studio-page .inspiration-content .inspiration-features .feature-item {
+    padding: 12px;
+    gap: 12px;
+  }
+  .tiktok-studio-page .inspiration-content .inspiration-features .feature-item .feature-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .tiktok-studio-page .inspiration-content .inspiration-features .feature-item .feature-content h4 {
+    font-size: 15px;
+  }
+  .tiktok-studio-page .inspiration-content .inspiration-features .feature-item .feature-content p {
+    font-size: 13px;
+  }
+}
+.tiktok-studio-page .trending-section {
+  background: transparent;
+  border-radius: 0;
+  padding: 20px;
+  margin-bottom: 0;
+  border: none;
+}
+.tiktok-studio-page .trending-section .trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.tiktok-studio-page .trending-section .trending-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+.tiktok-studio-page .trending-section .trending-header .filter-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 6px;
+  color: #666;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+.tiktok-studio-page .trending-section .trending-header .filter-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .trending-section .trending-header .filter-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .trending-section .trending-header .filter-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .trending-section .trending-header .filter-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .trending-section .trending-header .filter-btn:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .trending-section .trending-header .filter-btn img {
+  width: 20px;
+  height: 20px;
+}
+.tiktok-studio-page .trending-section .trending-tabs {
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+.tiktok-studio-page .trending-section .trending-tabs > div:first-child {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+.tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn:focus {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn:active {
+  transform: scale(0.98);
+}
+.tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn:focus:not(:focus-visible) {
+  outline: none;
+  background: none;
+}
+.tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn.active {
+  background: #000;
+  color: #fff;
+}
+.tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn:not(.active) {
+  background: #e5e5e5;
+  color: #666;
+}
+@media (hover: hover) {
+  .tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn:not(.active):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+.tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn:not(.active):active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(0.98);
+}
+.tiktok-studio-page .trending-section .trending-tabs .filter-btn {
+  background-color: transparent;
+  border: 0;
+}
+.tiktok-studio-page .trending-section .trending-tabs .filter-btn img {
+  width: 20px;
+}
+.tiktok-studio-page .trending-section .trending-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+.tiktok-studio-page .trending-section .trending-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f5f5f5;
+  aspect-ratio: 11/16;
+}
+.tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay .post-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay .like-count {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+.tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay .like-count svg {
+  width: 14px;
+  height: 14px;
+}
+.tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .trending-section {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .tiktok-studio-page .trending-section .trending-header h2 {
+    font-size: 16px;
+  }
+  .tiktok-studio-page .trending-section .trending-header .filter-btn {
+    padding: 6px;
+  }
+  .tiktok-studio-page .trending-section .trending-header .filter-btn img {
+    width: 20px;
+  }
+  .tiktok-studio-page .trending-section .trending-tabs {
+    gap: 6px;
+  }
+  .tiktok-studio-page .trending-section .trending-tabs .trending-tab-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  .tiktok-studio-page .trending-section .trending-subtitle {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .tiktok-studio-page .trending-section .trending-posts-grid {
+    gap: 8px;
+  }
+  .tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay {
+    padding: 10px;
+    gap: 4px;
+  }
+  .tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay .post-title {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay .like-count {
+    font-size: 12px;
+  }
+  .tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay .like-count svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay {
+    padding: 10px;
+    gap: 3px;
+  }
+  .tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay .post-title {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .tiktok-studio-page .trending-section .trending-posts-grid .trending-post-item .post-thumbnail .post-overlay .like-count {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .tiktok-studio-page .combined-sections-container {
+    margin: 16px 0px;
+    border-radius: 16px;
+  }
+  .tiktok-studio-page .tools-section {
+    padding: 2px 8px;
+  }
+  .tiktok-studio-page .monetization-section {
+    padding: 16px 0px;
+  }
+  .tiktok-studio-page .trending-section {
+    padding: 16px;
+  }
+}
+.tiktok-studio-page .rewards-per-post-section {
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.tiktok-studio-page .rewards-per-post-section:hover {
+  background-color: #e8e8e8;
+}
+.tiktok-studio-page .rewards-per-post-section .rewards-per-post-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+.tiktok-studio-page .rewards-per-post-section .rewards-per-post-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tiktok-studio-page .rewards-per-post-section .rewards-per-post-icons .reward-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.tiktok-studio-page .rewards-per-post-section .rewards-per-post-icons .reward-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.tiktok-studio-page .rewards-per-post-section .rewards-per-post-icons svg {
+  color: #999;
+  margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .tiktok-studio-page .main-tab-switcher {
+    padding: 0 16px;
+  }
+  .tiktok-studio-page .main-tab-switcher .main-tab {
+    font-size: 14px;
+    padding: 8px 0;
+    flex: 1;
+  }
+}
