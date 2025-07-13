@@ -62,7 +62,10 @@ export default function BalanceDetailsPage() {
 
       <div className="p-2 relative -mt-32 space-y-3 z-10">
         <div className="bg-white shadow-sm rounded-lg flex flex-col p-1 space-y-1">
-          <div className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2">
+                    <button
+            onClick={handleContentRewards}
+            className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
+          >
             <div className="leading-5">
               <h4 className="text-primary font-semibold">Content rewards</h4>
               <div className="flex text-sm items-center gap-2 text-muted-foreground">
