@@ -80,15 +80,20 @@ export default function BalanceDetailsPage() {
               <ChevronRight className="size-5" />
             </div>
           </button>
-          <div className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2">
+          <button
+            onClick={handleMonthlyEarnings}
+            className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
+          >
             <div className="leading-5">
               <h4 className="text-primary font-semibold">Monthly earnings</h4>
             </div>
             <div className="flex items-center gap-1">
-              <span className="text-xs font-semibold">USD 0.00</span>
+              <span className="text-xs font-semibold">
+                USD {demoBalance.thisMonth}
+              </span>
               <ChevronRight className="size-5" />
             </div>
-          </div>
+          </button>
 
           <button
             onClick={handleIncomeplus}
