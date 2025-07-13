@@ -78,7 +78,10 @@ export default function BalanceDetailsPage() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2">
+                    <button
+            onClick={handleIncomeplus}
+            className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
+          >
             <div className="flex items-center gap-1">
               <h4 className="text-primary font-semibold">Income+</h4>
               <span className="rounded px-0.5 bg-red-500/10 text-red-500 text-xs">
