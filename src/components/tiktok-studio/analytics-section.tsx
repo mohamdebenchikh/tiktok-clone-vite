@@ -1,11 +1,27 @@
-import { ArrowDownCircle, ArrowUpCircle, ChevronRight, HeartIcon, PlayIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import {
+  ArrowDownCircle,
+  ArrowUpCircle,
+  ChevronRight,
+  HeartIcon,
+  PlayIcon,
+} from "lucide-react";
 
 export default function AnalyticsSection() {
+  const navigate = useNavigate();
+
+  const handleViewAll = () => {
+    navigate("/rewards-analytics");
+  };
+
   return (
     <div className="bg-white shadow rounded-lg p-3 space-y-3.5">
       <div className="flex items-center justify-between">
         <h4 className="font-bold">Analytics</h4>
-        <button className="text-xs font-semibold text-muted-foreground flex items-center">
+        <button
+          onClick={handleViewAll}
+          className="text-xs font-semibold text-muted-foreground flex items-center hover:text-gray-600 transition-colors"
+        >
           View all
           <ChevronRight className="size-4 ml-0.5" />
         </button>
@@ -40,7 +56,9 @@ export default function AnalyticsSection() {
       </div>
 
       <div className="flex items-center  cursor-pointer justify-between">
-        <span className="text-sm text-primary font-semibold">Your latest post</span>
+        <span className="text-sm text-primary font-semibold">
+          Your latest post
+        </span>
         <div className="flex items-center gap-2">
           <span className="flex items-center gap-1 text-sm text-muted-foreground">
             <PlayIcon className="size-4" /> 0
@@ -52,5 +70,5 @@ export default function AnalyticsSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }
