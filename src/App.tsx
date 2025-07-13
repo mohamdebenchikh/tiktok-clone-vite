@@ -21,7 +21,6 @@ function App() {
     <Router>
       <div className="flex min-h-svh flex-col items-center justify-center bg-accent-foreground">
         <div className="sm:max-w-sm w-full relative h-screen p-0 sm:py-2.5">
-          <NavigationTest />
           <Routes>
             {/* Default route - redirect to profile */}
             <Route path="/" element={<Navigate to="/profile" replace />} />
