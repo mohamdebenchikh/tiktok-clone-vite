@@ -71,7 +71,7 @@ export default function BalanceDetailsPage() {
                 onClick={handleContentRewards}
                 className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
               >
-                <div className="leading-5">
+                <div className="leading-5 flex items-baseline">
                   <h4 className="text-primary font-semibold">
                     Content rewards
                   </h4>
