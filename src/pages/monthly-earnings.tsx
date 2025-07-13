@@ -10,7 +10,7 @@ import { demoBalance } from "@/data/demo-data";
 
 export default function MonthlyEarningsPage() {
   const navigate = useNavigate();
-  const [selectedMonth, setSelectedMonth] = useState("December 2024");
+  const [selectedMonth] = useState("December 2024");
 
   const handleBack = () => {
     navigate("/balance-details");
