@@ -29,7 +29,7 @@ export default function BalanceDetailsPage() {
     navigate("/monthly-earnings");
   };
 
-  return (
+    return (
     <div className="h-full bg-gray-100 sm:rounded-lg sm:shadow relative overflow-hidden flex flex-col">
       {/* Header with black background - fixed height */}
       <div className="h-[280px] bg-black/95 relative flex-shrink-0">
@@ -48,7 +48,7 @@ export default function BalanceDetailsPage() {
           </div>
         </div>
 
-        <div className="flex-1 flex items-center justify-center flex-col w-full px-4">
+                <div className="flex-1 flex items-center justify-center flex-col w-full px-4">
           <div className="text-gray-300 font-light flex items-center gap-2">
             <strong className="tracking-wide">Estimated amount </strong>
             <InfoIcon className="size-4" />
@@ -60,11 +60,14 @@ export default function BalanceDetailsPage() {
             </span>
           </div>
         </div>
-      </div>
+            </div>
 
-      <div className="p-2 relative -mt-32 space-y-3 z-10">
+      {/* Scrollable content area */}
+      <div className="flex-1 overflow-hidden">
+        <ScrollArea className="h-full w-full">
+          <div className="p-4 relative -mt-16 space-y-4 z-10">
         <div className="bg-white shadow-sm rounded-lg flex flex-col p-1 space-y-1">
-          <button
+                                        <button
             onClick={handleContentRewards}
             className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
           >
@@ -82,7 +85,7 @@ export default function BalanceDetailsPage() {
               <ChevronRight className="size-5" />
             </div>
           </button>
-          <button
+                    <button
             onClick={handleMonthlyEarnings}
             className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
           >
@@ -90,9 +93,7 @@ export default function BalanceDetailsPage() {
               <h4 className="text-primary font-semibold">Monthly earnings</h4>
             </div>
             <div className="flex items-center gap-1">
-              <span className="text-xs font-semibold">
-                USD {demoBalance.thisMonth}
-              </span>
+              <span className="text-xs font-semibold">USD {demoBalance.thisMonth}</span>
               <ChevronRight className="size-5" />
             </div>
           </button>
