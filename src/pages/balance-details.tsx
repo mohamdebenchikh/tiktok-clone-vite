@@ -4,6 +4,7 @@ import YellowDiamond from "@/assets/yellow_diamond.png";
 import YellowDollar from "@/assets/yellow_dollar.png";
 import { demoBalance } from "@/data/demo-data";
 import BottomNavigation from "@/components/profile/bottom-navigation";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function BalanceDetailsPage() {
   const navigate = useNavigate();
