@@ -15,7 +15,6 @@ import IncomeVerificationPage from "@/pages/income-verification";
 import RewardsAnalyticsPage from "@/pages/rewards-analytics";
 import WithdrawMoneyPage from "@/pages/withdraw-money";
 import WithdrawResultPage from "@/pages/withdraw-result";
-import NavigationTest from "@/components/navigation-test";
 
 function App() {
   return (
