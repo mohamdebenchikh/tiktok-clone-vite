@@ -120,6 +120,7 @@ export default function BalanceDetailsPage() {
           <img src={YellowDollar} className="h-20" />
         </div>
       </div>
+      <BottomNavigation />
     </div>
   );
 }
