@@ -63,9 +63,9 @@ export default function BalanceDetailsPage() {
       </div>
 
       {/* Scrollable content area */}
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 relative -mt-32 space-y-4 z-20 overflow-hidden">
         <ScrollArea className="h-full w-full">
-          <div className="p-4 pb-8 relative -mt-32 space-y-4 z-20">
+          <div className="p-4 pb-8 ">
             <div className="bg-white shadow-sm rounded-lg flex flex-col p-1 space-y-1">
               <button
                 onClick={handleContentRewards}
