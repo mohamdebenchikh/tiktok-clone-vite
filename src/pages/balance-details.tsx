@@ -29,7 +29,7 @@ export default function BalanceDetailsPage() {
     navigate("/monthly-earnings");
   };
 
-    return (
+  return (
     <div className="h-full bg-gray-100 sm:rounded-lg sm:shadow relative overflow-hidden flex flex-col">
       {/* Header with black background - fixed height */}
       <div className="h-[280px] bg-black/95 relative flex-shrink-0">
@@ -48,7 +48,7 @@ export default function BalanceDetailsPage() {
           </div>
         </div>
 
-                <div className="flex-1 flex items-center justify-center flex-col w-full px-4">
+        <div className="flex-1 flex items-center justify-center flex-col w-full px-4">
           <div className="text-gray-300 font-light flex items-center gap-2">
             <strong className="tracking-wide">Estimated amount </strong>
             <InfoIcon className="size-4" />
@@ -59,85 +59,95 @@ export default function BalanceDetailsPage() {
               {demoBalance.withdrawable}
             </span>
           </div>
-                </div>
+        </div>
       </div>
 
       {/* Scrollable content area */}
       <div className="flex-1 overflow-hidden">
         <ScrollArea className="h-full w-full">
           <div className="p-4 relative -mt-16 space-y-4 z-10">
-        <div className="bg-white shadow-sm rounded-lg flex flex-col p-1 space-y-1">
-                                        <button
-            onClick={handleContentRewards}
-            className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
-          >
-            <div className="leading-5">
-              <h4 className="text-primary font-semibold">Content rewards</h4>
-              <div className="flex text-sm items-center gap-2 text-muted-foreground">
-                Accumulated Diamonds:{" "}
-                <span className="flex items-center">
-                  <img src={YellowDiamond} className="size-4" /> 0
-                </span>
-              </div>
-            </div>
-            <div className="flex items-center gap-1">
-              <span className="text-xs font-semibold">USD 0.00</span>
-              <ChevronRight className="size-5" />
-            </div>
-          </button>
-                    <button
-            onClick={handleMonthlyEarnings}
-            className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
-          >
-            <div className="leading-5">
-              <h4 className="text-primary font-semibold">Monthly earnings</h4>
-            </div>
-            <div className="flex items-center gap-1">
-              <span className="text-xs font-semibold">USD {demoBalance.thisMonth}</span>
-              <ChevronRight className="size-5" />
-            </div>
-          </button>
+            <div className="bg-white shadow-sm rounded-lg flex flex-col p-1 space-y-1">
+              <button
+                onClick={handleContentRewards}
+                className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
+              >
+                <div className="leading-5">
+                  <h4 className="text-primary font-semibold">
+                    Content rewards
+                  </h4>
+                  <div className="flex text-sm items-center gap-2 text-muted-foreground">
+                    Accumulated Diamonds:{" "}
+                    <span className="flex items-center">
+                      <img src={YellowDiamond} className="size-4" /> 0
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-xs font-semibold">USD 0.00</span>
+                  <ChevronRight className="size-5" />
+                </div>
+              </button>
+              <button
+                onClick={handleMonthlyEarnings}
+                className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
+              >
+                <div className="leading-5">
+                  <h4 className="text-primary font-semibold">
+                    Monthly earnings
+                  </h4>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-xs font-semibold">
+                    USD {demoBalance.thisMonth}
+                  </span>
+                  <ChevronRight className="size-5" />
+                </div>
+              </button>
 
-          <button
-            onClick={handleIncomeplus}
-            className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
-          >
-            <div className="flex items-center gap-1">
-              <h4 className="text-primary font-semibold">Income+</h4>
-              <span className="rounded px-0.5 bg-red-500/10 text-red-500 text-xs">
-                To be retired
-              </span>
+              <button
+                onClick={handleIncomeplus}
+                className="flex items-center hover:bg-accent rounded-lg justify-between py-4 px-2 w-full transition-colors"
+              >
+                <div className="flex items-center gap-1">
+                  <h4 className="text-primary font-semibold">Income+</h4>
+                  <span className="rounded px-0.5 bg-red-500/10 text-red-500 text-xs">
+                    To be retired
+                  </span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="flex flex-col">
+                    <span className="text-sm">
+                      USD {demoBalance.withdrawable}
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      USD {demoBalance.withdrawable}
+                    </span>
+                  </div>
+                  <ChevronRight className="size-5" />
+                </div>
+              </button>
             </div>
-            <div className="flex items-center gap-1">
-              <div className="flex flex-col">
-                <span className="text-sm">USD {demoBalance.withdrawable}</span>
-                <span className="text-xs text-muted-foreground">
-                  USD {demoBalance.withdrawable}
-                </span>
+            <div className="bg-white shadow-sm rounded-lg p-3 flex items-center justify-between">
+              <div className="flex-1 space-y-2">
+                <h4 className="font-semibold text-sm text-primary">
+                  Earn more rewards
+                </h4>
+                <p className="text-muted-foreground text-xs">
+                  Check out the Monetization Center for exciting opportunities
+                  and programs.
+                </p>
+                <button
+                  onClick={handleExploreMonetization}
+                  className="text-xs font-semibold text-pink-600 flex items-center gap-1 hover:text-pink-700 transition-colors"
+                >
+                  Explore
+                  <ChevronRight className="size-4" />
+                </button>
               </div>
-              <ChevronRight className="size-5" />
+              <img src={YellowDollar} className="h-20" />
             </div>
-          </button>
-        </div>
-        <div className="bg-white shadow-sm rounded-lg p-3 flex items-center justify-between">
-          <div className="flex-1 space-y-2">
-            <h4 className="font-semibold text-sm text-primary">
-              Earn more rewards
-            </h4>
-            <p className="text-muted-foreground text-xs">
-              Check out the Monetization Center for exciting opportunities and
-              programs.
-            </p>
-            <button
-              onClick={handleExploreMonetization}
-              className="text-xs font-semibold text-pink-600 flex items-center gap-1 hover:text-pink-700 transition-colors"
-            >
-              Explore
-              <ChevronRight className="size-4" />
-            </button>
           </div>
-          <img src={YellowDollar} className="h-20" />
-        </div>
+        </ScrollArea>
       </div>
       <BottomNavigation />
     </div>
