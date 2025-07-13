@@ -48,7 +48,7 @@ export default function BalanceDetailsPage() {
           </div>
         </div>
 
-        <div className="space-y-2 h-[140px] flex items-center justify-center flex-col w-full">
+        <div className="flex-1 flex items-center justify-center flex-col w-full px-4">
           <div className="text-gray-300 font-light flex items-center gap-2">
             <strong className="tracking-wide">Estimated amount </strong>
             <InfoIcon className="size-4" />
