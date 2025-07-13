@@ -26,8 +26,9 @@ function App() {
     <LoadingProvider>
       <Router>
         <div className="flex min-h-svh flex-col items-center justify-center bg-accent-foreground">
-          <div className="sm:max-w-sm w-full relative h-screen p-0 sm:py-2.5">
-            <Routes>
+          <div className="sm:max-w-sm w-full h-screen p-0 sm:py-2.5">
+            <div className="relative w-full h-full bg-white sm:rounded-lg overflow-hidden">
+              <Routes>
               {/* Default route - redirect to profile */}
               <Route path="/" element={<Navigate to="/profile" replace />} />
 
@@ -75,10 +76,11 @@ function App() {
 
               {/* Catch all - redirect to profile */}
               <Route path="*" element={<Navigate to="/profile" replace />} />
-            </Routes>
+              </Routes>
+              <LoadingOverlay />
+            </div>
           </div>
         </div>
-        <LoadingOverlay />
       </Router>
     </LoadingProvider>
   );
